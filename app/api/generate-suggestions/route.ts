@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
         suggestions = JSON.parse(jsonMatch[1]);
       } else {
         // Fallback: try to extract array-like content
-        const arrayMatch = content.match(/\[(.*?)\]/s);
+        const arrayMatch = content.match(/\[([\s\S]*?)\]/);
         if (arrayMatch) {
           suggestions = JSON.parse(`[${arrayMatch[1]}]`);
         }
