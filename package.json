@@ -9,6 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@langchain/openai": "^1.2.0",
+    "langchain": "^1.2.0",
+    "langsmith": "^0.3.87",
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1"
